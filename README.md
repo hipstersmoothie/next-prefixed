@@ -1,5 +1,5 @@
 <div align="center">
-  <img width="200" height="200"
+  <img height="200"
     src="https://seeklogo.com/images/N/next-js-logo-7929BCD36F-seeklogo.com.png">
   <h1>next-prefixed</h1>
   <p>Prefix next links and images. Useful when serving from basePath.</p>
