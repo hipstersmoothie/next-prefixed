@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image 1`] = `
+<img
+  alt="Cabo"
+  src="my_prefix/static/foo.png"
+/>
+`;
+
+exports[`Link 1`] = `
+<a
+  href="my_prefix/blog/first"
+  onClick={[Function]}
+>
+  First Post
+</a>
+`;
+
+exports[`Link 2`] = `
+<a
+  href="my_prefix/blog/second"
+  onClick={[Function]}
+>
+  Second Post
+</a>
+`;
+
+exports[`Link 3`] = `
+<a
+  href="my_prefix/bananas"
+  onClick={[Function]}
+>
+  First Post
+</a>
+`;
