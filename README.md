@@ -52,5 +52,5 @@ Passes all props to next.js `Link` component.
 ```js
 import { Link } from 'next-prefixed';
 
-const Example = () => <Image src="pony.png" alt="Valiant Horse" />;
+const Example = () => <Link to="/blog" />;
 ```
