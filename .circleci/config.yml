@@ -73,10 +73,10 @@ jobs:
           name: 'Make sure we can commit to github'
           command: |
             mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
-      - run: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/next-prefixed/.npmrc
+      - run: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
       - run:
           name: Release
-          command: yarn release
+          command: npm run release
 
 workflows:
   version: 2
