@@ -44,8 +44,8 @@
     "xo": "^0.23.0"
   },
   "peerDependencies": {
-    "next": ">7",
-    "react": ">16"
+    "next": ">7.x",
+    "react": ">16.x"
   },
   "prettier": {
     "singleQuote": true
