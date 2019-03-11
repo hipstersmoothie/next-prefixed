@@ -4,8 +4,14 @@ import getConfig from 'next/config';
 
 const { publicRuntimeConfig } = getConfig();
 
-export const prefixURL = url => /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i.test(url) ? url : (
-  publicRuntimeConfig.assetPrefix.replace(/\/+$/, '') + '/' + url.replace(/^\/+/, '')
+const prefixPath = path => publicRuntimeConfig.assetPrefix.replace(/\/+$/, '') + '/' + (path || '').replace(/^\/+/, '')
+
+export const prefixURL = url => {
+  if (typeof url === 'object') {
+    return { ...url, pathname: prefixPath(url.pathname) };
+  } else {
+    return /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i.test(url) ? url : prefixPath(url);
+  }
 );
 
 export const Image = props => <img {...props} src={prefixURL(props.src)} />;
