@@ -34,7 +34,7 @@
     "eslint-plugin-react": "^7.11.1",
     "github-semantic-version": "^7.6.0",
     "husky": "^1.1.2",
-    "jest": "^23.6.0",
+    "jest": "^24.4.0",
     "lint-staged": "^7.3.0",
     "next": "^7.0.2",
     "prettier": "^1.14.3",
