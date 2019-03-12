@@ -1,13 +1,81 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Image 1`] = `
+exports[`[with prefix a/path] Image 1`] = `
+<img
+  alt="Cabo"
+  src="a/path/static/foo.png"
+/>
+`;
+
+exports[`[with prefix a/path] Link 1`] = `
+<a
+  href="a/path/blog/first"
+  onClick={[Function]}
+>
+  First Post
+</a>
+`;
+
+exports[`[with prefix a/path] Link 2`] = `
+<a
+  href="a/path/blog/second"
+  onClick={[Function]}
+>
+  Second Post
+</a>
+`;
+
+exports[`[with prefix a/path] Link 3`] = `
+<a
+  href="a/path/bananas"
+  onClick={[Function]}
+>
+  First Post
+</a>
+`;
+
+exports[`[with prefix a-prefix/] Image 1`] = `
+<img
+  alt="Cabo"
+  src="a-prefix/static/foo.png"
+/>
+`;
+
+exports[`[with prefix a-prefix/] Link 1`] = `
+<a
+  href="a-prefix/blog/first"
+  onClick={[Function]}
+>
+  First Post
+</a>
+`;
+
+exports[`[with prefix a-prefix/] Link 2`] = `
+<a
+  href="a-prefix/blog/second"
+  onClick={[Function]}
+>
+  Second Post
+</a>
+`;
+
+exports[`[with prefix a-prefix/] Link 3`] = `
+<a
+  href="a-prefix/bananas"
+  onClick={[Function]}
+>
+  First Post
+</a>
+`;
+
+exports[`[with prefix my_prefix] Image 1`] = `
 <img
   alt="Cabo"
   src="my_prefix/static/foo.png"
 />
 `;
 
-exports[`Link 1`] = `
+exports[`[with prefix my_prefix] Link 1`] = `
 <a
   href="my_prefix/blog/first"
   onClick={[Function]}
@@ -16,7 +84,7 @@ exports[`Link 1`] = `
 </a>
 `;
 
-exports[`Link 2`] = `
+exports[`[with prefix my_prefix] Link 2`] = `
 <a
   href="my_prefix/blog/second"
   onClick={[Function]}
@@ -25,9 +93,43 @@ exports[`Link 2`] = `
 </a>
 `;
 
-exports[`Link 3`] = `
+exports[`[with prefix my_prefix] Link 3`] = `
 <a
   href="my_prefix/bananas"
+  onClick={[Function]}
+>
+  First Post
+</a>
+`;
+
+exports[`[with prefix some-prefix////] Image 1`] = `
+<img
+  alt="Cabo"
+  src="some-prefix/static/foo.png"
+/>
+`;
+
+exports[`[with prefix some-prefix////] Link 1`] = `
+<a
+  href="some-prefix/blog/first"
+  onClick={[Function]}
+>
+  First Post
+</a>
+`;
+
+exports[`[with prefix some-prefix////] Link 2`] = `
+<a
+  href="some-prefix/blog/second"
+  onClick={[Function]}
+>
+  Second Post
+</a>
+`;
+
+exports[`[with prefix some-prefix////] Link 3`] = `
+<a
+  href="some-prefix/bananas"
   onClick={[Function]}
 >
   First Post

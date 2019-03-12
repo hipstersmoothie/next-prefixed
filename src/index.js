@@ -4,15 +4,17 @@ import getConfig from 'next/config';
 
 const { publicRuntimeConfig } = getConfig();
 
-const prefixPath = path => publicRuntimeConfig.assetPrefix.replace(/\/+$/, '') + '/' + (path || '').replace(/^\/+/, '')
+const prefixPath = path =>
+  publicRuntimeConfig.assetPrefix.replace(/\/+$/, '') +
+  '/' +
+  (path || '').replace(/^\/+/, '');
 
 export const prefixURL = url => {
   if (typeof url === 'object') {
-    return { ...url, pathname: prefixPath(url.pathname) };
-  } else {
-    return /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i.test(url) ? url : prefixPath(url);
+    return Object.assign({}, url, { pathname: prefixPath(url.pathname) });
   }
-);
+  return /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i.test(url) ? url : prefixPath(url);
+};
 
 export const Image = props => <img {...props} src={prefixURL(props.src)} />;
 
