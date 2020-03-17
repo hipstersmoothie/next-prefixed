@@ -18,7 +18,7 @@
     "build": "babel src/index.js -d dist/  --ignore '**/*.test.js'",
     "build:watch": "npm run build -- --watch",
     "prerelease": "npm run build",
-    "release": "github-semantic-version --bump --changelog --push --publish"
+    "release": "auto shipit"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.2",
