@@ -1,3 +1,15 @@
+# v0.0.11 (Tue Mar 17 2020)
+
+#### ⚠️  Pushed to `master`
+
+- fix destructuring bug ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v0.0.10 (Tue Mar 17 2020)
 
 #### 🐛 Bug Fix
