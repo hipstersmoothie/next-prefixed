@@ -1,6 +1,6 @@
 {
   "name": "next-prefixed",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Prefix next links and images. Useful when serving from basePath.",
   "main": "dist/index.js",
   "source": "src/index.js",
