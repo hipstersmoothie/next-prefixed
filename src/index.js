@@ -3,7 +3,7 @@ import NextLink from 'next/link';
 import getConfig from 'next/config';
 
 const getAssetPrefix = () => {
-  const { publicRuntimeConfig } = getConfig() || {};
+  const { publicRuntimeConfig = {} } = getConfig() || {};
   return publicRuntimeConfig.assetPrefix || '';
 };
 
